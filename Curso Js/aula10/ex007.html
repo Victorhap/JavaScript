@@ -6,15 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Somando numeros</title>
     <style>
-        
+        body{
+            background-color: rgb(124, 131, 131);
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto; 
+            height: 100vh;
+        }
+        .box{
+            background-color: rgb(161, 78, 78);
+            width: 300px;
+            height: 300px;
+            box-shadow: 1px 1px 10px 3px black;
+            border-radius: 10px;
+        }
+        .btn{
+            width: 100px;
+            background-color: rgb(98, 98, 243);
+            border-radius: 6px;
+            padding: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            box-shadow: 1px 1px 5px 1px black;
+        }
+        input#txtn1, input#txtn2{
+            padding: 8px;
+            text-align: center;
+            border-radius: 6px;
+            
+        }
     </style>
 </head>
 <body>
-    <h1>Somando numeros</h1>
-    <input type="number" name="txtn1" id="txtn1"> +
-    <input type="number" name="txtn2" id="txtn2">
-    <input type="button" value="Somar" onclick="somar()">
-    <div id="res">Resultado: </div>
+    <div class="box">
+        <h1>Somando numeros</h1>
+        <div>
+            <input type="number" name="txtn1" id="txtn1">
+            <br>
+            +
+            <br>
+            <input type="number" name="txtn2" id="txtn2">
+            <br>
+            <br>
+            <input class="btn" type="button" value="Somar" onclick="somar()">
+            <br>
+            <br>
+            <div id="res">Resultado: </div>
+        </div>
+    </div>
     <script>
         function somar() {
             var tn1 = window.document.querySelector('#txtn1');
