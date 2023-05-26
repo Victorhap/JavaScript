@@ -1,0 +1,28 @@
+body{
+    background-color: gray;
+    
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+table{
+    background-color: rgb(3, 141, 221);
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    box-shadow: 1px 1px 8px 2px black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+td{
+    border: solid 1px black;
+    box-shadow: 1px 1px 5px black;
+    border-radius: 5px;
+    background-color: rgb(182, 177, 187);
+}
