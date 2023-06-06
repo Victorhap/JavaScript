@@ -1,9 +1,28 @@
-var jogador = document.querySelector('.jogador');
+let jogador = 'X';
+let jogadas = ['','','','','','','','',''];
 
-function clicar(){
+function clicar(n){
+    let permissao = validaCampo(jogadas[n])
+
+    if(permissao){
+        jogadas[n] = jogador
+        document.getElementsByClassName('quadrado')[n].innerHTML = jogador;
+        jogador = jogador == 'X' ? 'O' : 'X'; 
+    }else{
+        alert('erro')
+    }
+
+}
+
+function validaCampo(campo){
+
+    let result = true;
+
+    if (campo != '') result = false;
+    return result;
+
+}
+
+function vitoria(){
     
-    console.log('clicou')
-
-    document.querySelector('.jogador').innerHTML = "asdfasdf";
-
 }

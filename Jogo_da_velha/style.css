@@ -12,8 +12,6 @@ div {
 
 table{
     background-color: rgb(3, 141, 221);
-    width: 500px;
-    height: 500px;
     text-align: center;
     box-shadow: 1px 1px 8px 2px black;
     border-radius: 5px;
@@ -21,6 +19,9 @@ table{
 }
 
 td{
+    width: 165px;
+    height: 165px;
+    font-size: 100px;
     border: solid 1px black;
     box-shadow: 1px 1px 5px black;
     border-radius: 5px;
