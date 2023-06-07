@@ -1,12 +1,15 @@
-var verdadeiro = true;
+// Hoisting - içamento
+console.log(sobrenome);
+console.log(numero);
 
-console.log(verdadeiro);
-console.log(typeof verdadeiro);
+var nome = null;
+var sobrenome = "Battisti";
 
-console.log(typeof true);
-console.log(typeof false);
+console.log(nome);
+console.log(sobrenome);
 
-var falso = false;
+nome = "Matheus";
 
-console.log(falso);
-console.log(typeof falso);
+console.log(nome);
+
+var numero = 5;
