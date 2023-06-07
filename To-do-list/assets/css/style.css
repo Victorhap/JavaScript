@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    color: #333;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../img/pexels-aron-visuals-1743165.jpg);
+    background-position-x: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+button {
+    background-color: #fdfdfd;
+    color: #102f5e;
+    border: 2px solid #102f5e;
+    padding: .3rem .6rem ;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+button:hover {
+    background-color: #102f5e;
+    color: #fff;
+}
+
+button:hover > i {
+    color: #fff;
+}
+
+button i {
+    color: #102f5e;
+    font-weight: bold;
+    pointer-events: none;
+}
+
+.hide {
+    display: none;
+}
+
+/* ........ */
+
+.to-do-container {
+    background-color: white;
+    width: 450px;
+    border-radius: 15px;
+    margin: 3rem auto;
+    padding: 15px;
+}
+
+.to-do-container header {
+    text-align: center;
+    padding: 0px 10px 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* to-do form */
+
+#to-do-form, #edit-form {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+#to-do-form p, #edit-form p {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-control {
+    display: flex;
+}
+
+.form-control input {
+    margin-right: 3px;
+}
+
+#cancel-edit-btn {
+    margin-top: 10px;
+}
+
+/* to-do toolbar */
+
+#toolbar {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+}
+
+#toolbar h4 {
+    margin-bottom: 5px;
+}
+
+#search {
+    border-right: 1px solid #ddd;
+    padding-right: 10px;
+    margin-right: 10px;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+#search form {
+    display: flex;
+}
+
+#search input {
+    width: 100%;
+    margin-right: 3px;
+}
+
+#filter {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+#filter select {
+    flex: 1;
+}
+
+.to-do {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    transition: 0.3s;
+}
+
+.to-do h3 {
+    flex: 1;
+    font-size: .9rem;
+}
+
+.to-do button {
+    margin-left: 4px;
+}
+
+.done {
+    background-color: green;
+}
+
+.done h3{
+    color: white;
+    font-style: italic;
+}
